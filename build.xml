@@ -21,7 +21,7 @@
 
   <target name="run" depends="compile"
         description="run the main">
-    <java fork="true" dir="./src" classname="Hello">
+    <java fork="true" dir="./src" classname="org.junit.platform.console.ConsoleLauncher" failonerror="true">
       <classpath>
         <path location="./src"/>
       </classpath>
